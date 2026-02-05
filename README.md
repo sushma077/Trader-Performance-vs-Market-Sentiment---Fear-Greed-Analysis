@@ -120,9 +120,9 @@ Market sentiment has a measurable impact on trader behavior and performance. Inc
         ├── trader_sentiment_analysis.ipynb
         ├── README.md
         ├── requirement.txt
-        └── outputs/
-            ├── graphs/
-            └── tables/
+        ├── graphs/6 photos
+        └── tables/3 photos
+            
         
 
 ## ▶️ Steps to Run the Notebook Locally
