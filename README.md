@@ -76,7 +76,7 @@ Market sentiment has a measurable impact on trader behavior and performance. Inc
 
 
 ## GITHUB STRUCTURE
-        Trader-Sentiment-Analysis/
+        Trader-Performance-vs-Market-Sentiment---Fear-Greed-Analysis/
         │
         ├── trader_sentiment_analysis.ipynb
         ├── README.md
@@ -87,3 +87,35 @@ Market sentiment has a measurable impact on trader behavior and performance. Inc
         └── data/
             ├── sentiment.csv
             └── trades.csv
+
+## ▶️ Steps to Run the Notebook Locally
+### 1️⃣ Clone the Repository
+    git clone https://github.com/your-username/Trader-Performance-vs-Market-Sentiment---Fear-Greed-Analysis.git
+    cd Trader-Performance-vs-Market-Sentiment---Fear-Greed-Analysis
+
+### 2️⃣ Create a Virtual Environment (Recommended)
+    python -m venv venv
+
+Activate the environment:
+
+#### Windows
+
+    venv\Scripts\activate
+
+
+#### macOS / Linux
+
+    source venv/bin/activate
+
+### 3️⃣ Install Dependencies
+    pip install -r requirements.txt
+
+
+### 5️⃣ Launch Jupyter Notebook
+    Open:
+    
+    PrimeTrade_2026.ipynb
+
+Run all cells from top to bottom.
+
+##### This project was developed and tested in a local Python environment to ensure full reproducibility.
