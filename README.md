@@ -9,10 +9,18 @@ The objective of this project is to analyze how market sentiment (Fear vs Greed)
 ### Data Description
 
 --Bitcoin Market Sentiment Dataset
+
   Includes daily sentiment labels (Fear, Extreme Fear, Greed) with UNIX timestamps.
   
+  Link: https://drive.google.com/file/d/1PgQC0tO8XN-wqkNyghWc_-mnrYv_nhSf/view?usp=sharing
+  
+  
 --Hyperliquid Historical Trader Data
+
   Contains individual trade records including account, side, size, PnL, fees, and timestamps in  IST format.
+  
+  Link: https://drive.google.com/file/d/1IAfLZwu6rJzyWKgBToqwSmmVYU6VbjVs/view?usp=sharing
+  
 
 ### Methodology
 
@@ -62,12 +70,43 @@ The objective of this project is to analyze how market sentiment (Fear vs Greed)
 
 --Distinct trader archetypes exhibit different risk-return profiles.
 
+## Model Used
+
+## --Random Forest Classifier
+
+### Why this model was selected:
+
+--Handles non-linear relationships between features
+
+--Robust to noise and outliers
+
+--Requires minimal feature scaling
+
+--Provides strong baseline performance with limited tuning
+
+### Results Interpretation
+
+--Accuracy achieved: 95%
+
+--The model achieved reasonable accuracy, indicating that trader behavior features such as win rate and trade frequency contain meaningful predictive signal.
+
+### Limitations
+
+--The model does not account for transaction costs beyond basic fees.
+
+--Market conditions outside sentiment (e.g., volatility, news events) were not included.
+
+--The dataset is limited to a specific time period and platform.
+
+
 ### Strategy Recommendations
 
 1.Risk Control Strategy
+
 ---Reduce trading activity and risk exposure for low win-rate traders during Fear days.
 
 2.Opportunity Strategy
+
 ---Increase participation for consistent, high-frequency traders during Greed periods.
 
 ### Conclusion
@@ -80,15 +119,14 @@ Market sentiment has a measurable impact on trader behavior and performance. Inc
         │
         ├── trader_sentiment_analysis.ipynb
         ├── README.md
-        ├── requirements.txt
-        ├── outputs/
-        │   ├── charts/
-        │   └── tables/
-        └── data/
-            ├── sentiment.csv
-            └── trades.csv
+        ├── requirement.txt
+        └── outputs/
+            ├── graphs/
+            └── tables/
+        
 
 ## ▶️ Steps to Run the Notebook Locally
+
 ### 1️⃣ Clone the Repository
     git clone https://github.com/your-username/Trader-Performance-vs-Market-Sentiment---Fear-Greed-Analysis.git
     cd Trader-Performance-vs-Market-Sentiment---Fear-Greed-Analysis
@@ -108,8 +146,13 @@ Activate the environment:
     source venv/bin/activate
 
 ### 3️⃣ Install Dependencies
-    pip install -r requirements.txt
+    pip install -r requirement.txt
 
+### 4️⃣ Add the Data Files
+
+    Place the datasets in the folder whose links are given in README.md file.
+    
+    Ensure the file names match those used in the notebook.
 
 ### 5️⃣ Launch Jupyter Notebook
     Open:
